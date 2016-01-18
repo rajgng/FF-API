@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 # Use jdbcsqlite3 as the database for Active Record
-gem 'activerecord-jdbcsqlite3-adapter'
+# gem 'activerecord-jdbcsqlite3-adapter'
+# Use JDBC activerecord-jdbcpostgresql-adapter
+gem 'activerecord-jdbcpostgresql-adapter', '~>1.3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -46,3 +48,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # end
 
 gem 'jruby-openssl'
+
+# Devise + Authority + Rolify
+gem 'devise'
+gem 'authority'
+gem 'rolify'
